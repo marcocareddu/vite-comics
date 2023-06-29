@@ -7,6 +7,7 @@ export default {
 </script>
 
 <template>
+    <!-- Blue band Section -->
     <div>
         <ul>
             <li><a href="#"><img src="#" alt="">Text</a></li>
