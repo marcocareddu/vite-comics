@@ -1,0 +1,16 @@
+// Utils
+@mixin img-fluid {
+    max-width: 100%;
+}
+
+@mixin container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin flex-between {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
