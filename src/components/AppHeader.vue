@@ -61,18 +61,39 @@ export default {
 
 <template>
     <header>
-        <!-- Logo -->
-        <div class="logo">
-            <img src="@/assets/img/dc-logo.png" alt="Logo DC Comics">
-        </div>
+        <div>
+            <!-- Logo -->
+            <div class="logo">
+                <img class="img-fluid" src="@/assets/img/dc-logo.png" alt="Logo DC Comics">
+            </div>
 
-        <!-- Navbar -->
-        <nav>
-            <ul v-for="element in navElements" :key="element.text">
-                <li><a :href="element.url">{{ element.text }}</a></li>
-            </ul>
-        </nav>
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li v-for="element in navElements" :key="element.text"><a :href="element.url">{{ element.text }}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 </template>
 
-<style></style>
+<style lang="scss" scoped>
+@use '../assets/scss/partials/mixin' as *;
+
+header {
+    height: 100px;
+    background-color: #fff;
+
+    div {
+        @include container;
+        @include flex-between;
+    }
+
+    img {
+        height: 80px
+    }
+
+
+}
+</style>
