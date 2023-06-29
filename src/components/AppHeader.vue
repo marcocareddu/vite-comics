@@ -10,7 +10,7 @@ export default {
     <header>
         <!-- Logo -->
         <div class="logo">
-            <img src="#" alt="Logo DC Comics">
+            <img src="@/assets/img/dc-logo.png" alt="Logo DC Comics">
         </div>
 
         <!-- Navbar -->
