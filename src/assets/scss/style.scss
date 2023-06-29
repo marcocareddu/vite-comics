@@ -12,6 +12,11 @@ body {
     background-color: black;
 }
 
+// Utils
+.container {
+    @include container;
+}
+
 img {
     @include img-fluid;
 }
