@@ -1,7 +1,60 @@
 <script>
 export default {
     data() {
-        return {}
+        return {
+            navElements: [
+                {
+                    text: 'Characters',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Comics',
+                    url: '#',
+                    current: true,
+                },
+                {
+                    text: 'Movies',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'TV',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Games',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Collectibles',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Videos',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Fans',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'News',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Shop',
+                    url: '#',
+                    current: false,
+                },
+            ],
+        }
     }
 }
 </script>
@@ -15,15 +68,8 @@ export default {
 
         <!-- Navbar -->
         <nav>
-            <ul>
-                <li><a href="">Test</a></li>
-                <li><a href="">Test</a></li>
-                <li><a href="">Test</a></li>
-                <li><a href="">Test</a></li>
-                <li><a href="">Test</a></li>
-                <li><a href="">Test</a></li>
-                <li><a href="">Test</a></li>
-                <li><a href="">Test</a></li>
+            <ul v-for="element in navElements">
+                <li><a :href="element.url">{{ element.text }}</a></li>
             </ul>
         </nav>
     </header>
