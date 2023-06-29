@@ -1,7 +1,30 @@
 <script>
 export default {
     data() {
-        return {}
+        return {
+            socialMenu: [
+                {
+                    text: "facebook logo",
+                    picture: "src/assets/img/footer-facebook.png"
+                },
+                {
+                    text: "twitter logo",
+                    picture: "src/assets/img/footer-twitter.png"
+                },
+                {
+                    text: "youtube logo",
+                    picture: "src/assets/img/footer-youtube.png"
+                },
+                {
+                    text: "pinterest logo",
+                    picture: "src/assets/img/footer-pinterest.png"
+                },
+                {
+                    text: "periscope logo",
+                    picture: "src/assets/img/footer-periscope.png"
+                }
+            ]
+        }
     }
 }
 </script>
@@ -65,12 +88,8 @@ export default {
             <div>
                 <div>FOLLOW US</div>
                 <div>
-                    <ul>
-                        <li><a href="#"><img src="#" alt=""></a></li>
-                        <li><a href="#"><img src="#" alt=""></a></li>
-                        <li><a href="#"><img src="#" alt=""></a></li>
-                        <li><a href="#"><img src="#" alt=""></a></li>
-                        <li><a href="#"><img src="#" alt=""></a></li>
+                    <ul v-for="social in socialMenu" :key="social.text">
+                        <li><a href="#"><img :src="social.picture" :alt="social.text"></a></li>
                     </ul>
                 </div>
             </div>
