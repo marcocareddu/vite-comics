@@ -39,8 +39,8 @@ export default {
 <template>
     <!-- Blue band Section -->
     <div>
-        <ul v-for="item in blueMenu">
-            <li><a href="#"><img :src="createImgUrl(item.picture)" :alt="item.text">{{ item.text }}</a></li>
+        <ul v-for="item in blueMenu" :key="item.text">
+            <li><a href="#"><img :src="createImgUrl(item.picture)" alt="item.text">{{ item.text }}</a></li>
         </ul>
     </div>
 </template>
