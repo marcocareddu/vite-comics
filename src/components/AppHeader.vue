@@ -68,7 +68,7 @@ export default {
 
         <!-- Navbar -->
         <nav>
-            <ul v-for="element in navElements">
+            <ul v-for="element in navElements" :key="element.text">
                 <li><a :href="element.url">{{ element.text }}</a></li>
             </ul>
         </nav>
