@@ -56,7 +56,9 @@ export default {
                             name: "News",
                             url: "#"
                         }
-                    ],
+                    ]
+                },
+                {
                     title: "SHOP",
                     link: [
                         {
@@ -67,7 +69,9 @@ export default {
                             name: "Shop DC Collectibles",
                             url: "#"
                         },
-                    ],
+                    ]
+                },
+                {
                     title: "DC",
                     link: [
                         {
@@ -114,7 +118,9 @@ export default {
                             name: "Contact Us",
                             url: "#"
                         },
-                    ],
+                    ]
+                },
+                {
                     title: "SITES",
                     link: [
                         {
@@ -137,8 +143,9 @@ export default {
                             name: "DC Power Visa",
                             url: "#"
                         },
-                    ],
-                }
+                    ]
+                },
+
             ],
         }
     }
@@ -150,48 +157,10 @@ export default {
         <div class="uppper-foot">
 
             <!-- Menu link -->
-
-            <div>
-                <h1>DC COMICS</h1>
-                <ul>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                </ul>
-            </div>
-            <div>
-                <h1>SHOP</h1>
-                <ul>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                </ul>
-            </div>
-            <div>
-                <h1>DC COMICS</h1>
-                <ul>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                </ul>
-            </div>
-            <div>
-                <h1>DC COMICS</h1>
-                <ul>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
+            <div v-for="item in footerMenu">
+                <h1>{{ item.title }}</h1>
+                <ul v-for="(link, i) in item.link">
+                    <li><a href="{{link.url}}">{{ link.name }}</a></li>
                 </ul>
             </div>
         </div>
