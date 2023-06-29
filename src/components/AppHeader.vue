@@ -86,6 +86,7 @@ header {
     background-color: #fff;
 
     div {
+        height: 100%;
         @include flex-between;
     }
 

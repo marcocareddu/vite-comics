@@ -159,8 +159,8 @@ export default {
             <!-- Menu link -->
             <div v-for="item in footerMenu">
                 <h1>{{ item.title }}</h1>
-                <ul v-for="(link, i) in item.link">
-                    <li><a href="{{link.url}}">{{ link.name }}</a></li>
+                <ul>
+                    <li><a href="#">{{ item.link.name }}</a></li>
                 </ul>
             </div>
         </div>
@@ -173,9 +173,9 @@ export default {
             </div>
 
             <!-- Social -->
-            <div>
+            <div class="social-menu">
                 <div>FOLLOW US</div>
-                <div>
+                <div class="social-icons">
                     <ul v-for="social in socialMenu" :key="social.text">
                         <li><a href="#"><img :src="social.picture" :alt="social.text"></a></li>
                     </ul>
@@ -185,4 +185,39 @@ export default {
     </footer>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../assets/scss/partials/mixin' as *;
+@use '../assets/scss/partials/_customs' as *;
+
+footer {
+    background-color: $grey;
+}
+
+.upper-foot {
+    display: flex;
+}
+
+.lower-foot {
+    height: 100px;
+    @include flex-between
+}
+
+.social-menu {
+    @include flex-between;
+
+    div {
+        color: $blue;
+    }
+}
+
+.social-icons {
+    display: flex;
+}
+
+button {
+    color: white;
+    padding: 15px;
+    background-color: $grey;
+    border: 2px solid $blue;
+}
+</style>
