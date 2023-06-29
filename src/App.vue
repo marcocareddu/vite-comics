@@ -11,6 +11,11 @@ export default {
 
 </script>
 
-<template></template>
+<template>
+  <AppHeader />
+  <AppMain />
+  <BlueBand />
+  <AppFooter />
+</template>
 
 <style></style>
