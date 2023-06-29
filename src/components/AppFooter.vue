@@ -160,27 +160,29 @@ export default {
             <div v-for="item in footerMenu">
                 <h1>{{ item.title }}</h1>
                 <ul>
-                    <li><a href="#">{{ item.link.name }}</a></li>
+                    <li v-for="link in item.link"><a href="#">{{ link.name }}</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="lower-foot">
+            <div class="container">
+                <!-- Sign-up -->
+                <div>
+                    <button>SIGN-UP NOW!</button>
+                </div>
 
-            <!-- Sign-up -->
-            <div>
-                <button>SIGN-UP NOW!</button>
-            </div>
-
-            <!-- Social -->
-            <div class="social-menu">
-                <div>FOLLOW US</div>
-                <div class="social-icons">
-                    <ul v-for="social in socialMenu" :key="social.text">
-                        <li><a href="#"><img :src="social.picture" :alt="social.text"></a></li>
-                    </ul>
+                <!-- Social -->
+                <div class="social-menu">
+                    <div>FOLLOW US</div>
+                    <div class="social-icons">
+                        <ul v-for="social in socialMenu" :key="social.text">
+                            <li><a href="#"><img :src="social.picture" :alt="social.text"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
         </div>
     </footer>
 </template>
@@ -190,16 +192,29 @@ export default {
 @use '../assets/scss/partials/_customs' as *;
 
 footer {
-    background-color: $grey;
+    height: 500px;
+    background-image: url(../assets/img/footer-bg.jpg);
+}
+
+.container {
+    height: 100%;
+    @include flex-between;
 }
 
 .upper-foot {
+    height: 100%;
     display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
 }
 
 .lower-foot {
+    background-color: $grey;
     height: 100px;
-    @include flex-between
 }
 
 .social-menu {
