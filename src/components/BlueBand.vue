@@ -40,8 +40,10 @@ export default {
     <!-- Blue band Section -->
     <div class="blue-section">
         <section class="container">
-            <ul v-for="item in blueMenu" :key="item.text">
-                <li><a href="#"><img :src="createImgUrl(item.picture)" alt="item.text">{{ item.text }}</a></li>
+            <ul>
+                <li v-for="item in blueMenu" :key="item.text">
+                    <a href="#"><img :src="createImgUrl(item.picture)" alt="item.text"><span>{{ item.text }}</span></a>
+                </li>
             </ul>
         </section>
     </div>
@@ -52,21 +54,28 @@ export default {
 @use '../assets/scss/partials/_customs' as *;
 
 .blue-section {
+    height: 120px;
     background-color: $blue;
 }
 
 section {
     height: 100%;
     @include flex-center;
+    display: flex;
 
     ul li {
-        @include flex-center;
+        padding: 0 10px;
     }
 
-    ;
-
     img {
+        padding: 0 5px;
         height: 50px;
+    }
+
+    a {
+        color: white;
+        display: flex;
+        align-items: center;
     }
 }
 </style>
