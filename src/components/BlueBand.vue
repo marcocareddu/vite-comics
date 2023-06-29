@@ -6,6 +6,16 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <div>
+        <ul>
+            <li><a href="#"><img src="#" alt="">Text</a></li>
+            <li><a href="#"><img src="#" alt="">Text</a></li>
+            <li><a href="#"><img src="#" alt="">Text</a></li>
+            <li><a href="#"><img src="#" alt="">Text</a></li>
+            <li><a href="#"><img src="#" alt="">Text</a></li>
+        </ul>
+    </div>
+</template>
 
 <style></style>
