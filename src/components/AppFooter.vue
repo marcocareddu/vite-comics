@@ -150,26 +150,25 @@ export default {
         <div class="uppper-foot">
 
             <!-- Menu link -->
+
             <div>
-                <div>
-                    <h1>DC COMICS</h1>
-                    <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h1>SHOP</h1>
-                    <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                    </ul>
-                </div>
+                <h1>DC COMICS</h1>
+                <ul>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>SHOP</h1>
+                <ul>
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link</a></li>
+                </ul>
             </div>
             <div>
                 <h1>DC COMICS</h1>
