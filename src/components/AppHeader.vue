@@ -61,7 +61,7 @@ export default {
 
 <template>
     <header>
-        <div>
+        <div class="container">
             <!-- Logo -->
             <div class="logo">
                 <img class="img-fluid" src="@/assets/img/dc-logo.png" alt="Logo DC Comics">
@@ -86,14 +86,12 @@ header {
     background-color: #fff;
 
     div {
-        @include container;
         @include flex-between;
     }
 
     img {
         height: 80px
     }
-
 
 }
 </style>
