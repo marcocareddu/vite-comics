@@ -7,24 +7,26 @@ export default {
 </script>
 
 <template>
-    <!-- Logo -->
-    <div class="logo">
-        <img src="#" alt="Logo DC Comics">
-    </div>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="#" alt="Logo DC Comics">
+        </div>
 
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="">Test</a></li>
-            <li><a href="">Test</a></li>
-            <li><a href="">Test</a></li>
-            <li><a href="">Test</a></li>
-            <li><a href="">Test</a></li>
-            <li><a href="">Test</a></li>
-            <li><a href="">Test</a></li>
-            <li><a href="">Test</a></li>
-        </ul>
-    </nav>
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="">Test</a></li>
+                <li><a href="">Test</a></li>
+                <li><a href="">Test</a></li>
+                <li><a href="">Test</a></li>
+                <li><a href="">Test</a></li>
+                <li><a href="">Test</a></li>
+                <li><a href="">Test</a></li>
+                <li><a href="">Test</a></li>
+            </ul>
+        </nav>
+    </header>
 </template>
 
 <style></style>
