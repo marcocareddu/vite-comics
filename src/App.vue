@@ -23,10 +23,10 @@ export default {
 </script>
 
 <template>
-  <AppHeader :navElements="navElements" />
+  <AppHeader :nav-Elements="navElements" />
   <AppMain />
   <BlueBand />
-  <AppFooter />
+  <AppFooter :social-menu="socialMenu" :footer-Menu="footerMenu" />
 </template>
 
 <style lang="scss">
