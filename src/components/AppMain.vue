@@ -8,10 +8,13 @@ export default {
 
 <template>
     <div class="main-content">
+
         <div class="jumbotron"></div>
         <!-- Main content -->
         <section class="container">
-            <h1> Content goes here </h1>
+            <div class="row">
+
+            </div>
         </section>
     </div>
 </template>
@@ -21,7 +24,6 @@ export default {
 @use '../assets/scss/partials/_customs' as *;
 
 .main-content {
-    height: auto;
     background-color: $black;
 }
 
@@ -32,9 +34,17 @@ export default {
     background-size: cover;
 }
 
+.col {
+    flex-basis: calc(100% / 6);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 section {
-    height: 100%;
-    @include flex-between;
+    height: 400px;
     color: white;
 }
 </style>
