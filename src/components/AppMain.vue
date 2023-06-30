@@ -14,7 +14,9 @@ export default {
 <template>
     <div class="main-content">
 
+        <!-- Jumbotron -->
         <div class="jumbotron"></div>
+
         <!-- Main content -->
         <section class="container">
             <div class="row">
@@ -39,17 +41,14 @@ export default {
     background-size: cover;
 }
 
-.col {
-    flex-basis: calc(100% / 6);
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 section {
-    height: 400px;
+    height: 100%;
     color: white;
 }
 </style>
