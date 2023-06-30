@@ -44,7 +44,10 @@ header {
 }
 
 a {
-    font-weight: 600;
+    padding-right: 10px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 800;
     color: $grey;
 }
 </style>
