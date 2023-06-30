@@ -27,6 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/mixin' as *;
+@use '../assets/scss/partials/_customs' as *;
 
 header {
     height: 100px;
@@ -40,6 +41,10 @@ header {
     img {
         height: 80px
     }
+}
 
+a {
+    font-weight: 600;
+    color: $grey;
 }
 </style>
