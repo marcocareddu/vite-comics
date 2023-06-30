@@ -55,4 +55,8 @@ section {
         align-items: center;
     }
 }
+
+span {
+    font-size: 0.8rem;
+}
 </style>
