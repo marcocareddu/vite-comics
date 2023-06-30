@@ -1,6 +1,9 @@
 <script>
 import AppCard from './AppCard.vue';
 export default {
+    props: {
+        dcComics: Array,
+    },
     data() {
         return {}
     },
@@ -15,7 +18,7 @@ export default {
         <!-- Main content -->
         <section class="container">
             <div class="row">
-                <AppCard />
+                <AppCard :dc-Comics="dcComics" />
             </div>
         </section>
     </div>
