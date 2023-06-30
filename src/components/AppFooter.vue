@@ -22,6 +22,7 @@ export default {
 
         <div class="lower-foot">
             <div class="container">
+
                 <!-- Sign-up -->
                 <div>
                     <button>SIGN-UP NOW!</button>
@@ -29,7 +30,7 @@ export default {
 
                 <!-- Social -->
                 <div class="social-menu">
-                    <div>FOLLOW US</div>
+                    <div class="signup">FOLLOW US</div>
                     <div class="social-icons">
                         <ul v-for="social in socialMenu" :key="social.text">
                             <li><a href="#"><img :src="social.picture" :alt="social.text"></a></li>
@@ -90,9 +91,17 @@ ul {
 }
 
 button {
+    font-size: 1.0rem;
     color: white;
     padding: 15px;
     background-color: $grey;
     border: 2px solid $blue;
+    font-weight: 600;
+}
+
+.signup {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-right: 30px;
 }
 </style>
