@@ -25,7 +25,7 @@ export default {
 <template>
   <AppHeader :nav-Elements="navElements" />
   <AppMain :dc-Comics="dcComics" />
-  <BlueBand />
+  <BlueBand :blue-Menu="blueMenu" />
   <AppFooter :social-menu="socialMenu" :footer-Menu="footerMenu" />
 </template>
 
