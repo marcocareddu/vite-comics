@@ -22,6 +22,9 @@ export default {
                     </ul>
                 </div>
             </div>
+
+            <div class="big-logo">
+            </div>
         </div>
 
 
@@ -61,7 +64,6 @@ footer {
 
 // Upper Footer
 .upper-foot {
-    padding: 30px 0px;
     height: 100%;
     display: flex;
 
@@ -88,6 +90,16 @@ h1 {
 a {
     font-size: 0.8rem;
     color: $lightgrey;
+}
+
+// Big Logo
+.big-logo {
+    height: 300px;
+    width: 400px;
+    background-image: url(../assets/img/dc-logo-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 
 // Lower Footer
@@ -134,6 +146,7 @@ button {
     background-color: $grey;
     border: 2px solid $blue;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .signup {
