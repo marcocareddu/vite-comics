@@ -154,7 +154,7 @@ export default {
 
 <template>
     <footer>
-        <div class="uppper-foot">
+        <div class="uppper-foot container">
 
             <!-- Menu link -->
             <div v-for="item in footerMenu">
@@ -205,6 +205,7 @@ footer {
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 h1 {
