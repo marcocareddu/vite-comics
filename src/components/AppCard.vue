@@ -12,6 +12,7 @@ export default {
 </script>
 
 <template>
+    <!-- Cards injected -->
     <div v-for="comic in dcComics" class="col">
         <img :src="comic.thumb" alt="">
         <p>{{ comic.series }}</p>
