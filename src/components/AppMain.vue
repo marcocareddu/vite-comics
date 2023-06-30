@@ -22,6 +22,9 @@ export default {
             <div class="row">
                 <AppCard :dc-Comics="dcComics" />
             </div>
+            <div class="btn-container">
+                <button>LOAD MORE</button>
+            </div>
         </section>
     </div>
 </template>
@@ -32,6 +35,21 @@ export default {
 
 .main-content {
     background-color: $black;
+}
+
+.btn-container {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 50px;
+    background-color: $blue;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: none;
 }
 
 .jumbotron {
