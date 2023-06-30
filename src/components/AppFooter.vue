@@ -9,17 +9,23 @@ export default {
 
 <template>
     <footer>
-        <div class="uppper-foot container">
+
+        <!-- Upper Footer -->
+        <div class="upper-foot container">
 
             <!-- Menu link -->
-            <div v-for="item in footerMenu">
-                <h1>{{ item.title }}</h1>
-                <ul>
-                    <li v-for="link in item.link"><a href="#">{{ link.name }}</a></li>
-                </ul>
+            <div v-for="element in footerMenu">
+                <div v-for="item in element" class="menu-col">
+                    <h1>{{ item.title }}</h1>
+                    <ul>
+                        <li v-for="link in item.link"><a href="#">{{ link.name }}</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
+
+        <!-- Lower Footer -->
         <div class="lower-foot">
             <div class="container">
 
@@ -43,41 +49,71 @@ export default {
     </footer>
 </template>
 
+
+
 <style lang="scss" scoped>
 @use '../assets/scss/partials/mixin' as *;
 @use '../assets/scss/partials/_customs' as *;
 
 footer {
-    height: 500px;
     background-image: url(../assets/img/footer-bg.jpg);
 }
 
-.container {
-    height: 100%;
-    @include flex-between;
-}
-
+// Upper Footer
 .upper-foot {
+    padding: 30px 0px;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            padding: 0px;
+        }
+    }
+}
+
+.menu-col {
+    padding-right: 40px;
 }
 
 h1 {
     color: white;
+    font-size: 1.2rem;
+    padding: 10px 0px 5px 0px;
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
+a {
+    font-size: 0.8rem;
+    color: $lightgrey;
 }
 
+// Lower Footer
 .lower-foot {
     background-color: $grey;
     height: 100px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            padding: 6px;
+        }
+    }
 }
 
+
+// Socials
 .social-menu {
     @include flex-between;
 
@@ -90,6 +126,7 @@ ul {
     display: flex;
 }
 
+// Button
 button {
     font-size: 1.0rem;
     color: white;
