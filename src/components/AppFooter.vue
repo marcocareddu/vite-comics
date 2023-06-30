@@ -207,6 +207,10 @@ footer {
     flex-direction: column;
 }
 
+h1 {
+    color: white;
+}
+
 ul {
     display: flex;
     flex-direction: column;
