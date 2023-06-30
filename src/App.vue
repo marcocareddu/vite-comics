@@ -23,7 +23,7 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
+  <AppHeader :navElements="navElements" />
   <AppMain />
   <BlueBand />
   <AppFooter />
